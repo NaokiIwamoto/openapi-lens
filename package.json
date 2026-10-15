@@ -1,0 +1,56 @@
+{
+  "name": "Swagger-Viewer Extension",
+  "displayName": "Swagger Viewer",
+  "version": "0.0.1",
+  "description": "ウェブページ内のOpenAPI/Swagger YMLデータを自動検出し、Redocを使用して美しく視覚化するChrome拡張機能。APIドキュメントを簡単に閲覧・操作できます。",
+  "scripts": {
+    "dev": "plasmo dev",
+    "build": "plasmo build",
+    "package": "plasmo package"
+  },
+  "dependencies": {
+    "js-yaml": "^4.1.0",
+    "plasmo": "0.90.3",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "redoc": "^2.4.0"
+  },
+  "devDependencies": {
+    "@ianvs/prettier-plugin-sort-imports": "4.1.1",
+    "@types/chrome": "0.0.258",
+    "@types/node": "20.11.5",
+    "@types/react": "18.2.48",
+    "@types/react-dom": "18.2.18",
+    "prettier": "3.2.4",
+    "typescript": "5.3.3"
+  },
+  "manifest": {
+    "name": "Swagger Viewer",
+    "description": "OpenAPI/Swagger YML形式のデータをRedocで視覚化するChrome拡張機能",
+    "host_permissions": [
+      "<all_urls>"
+    ],
+    "permissions": [
+      "activeTab",
+      "storage",
+      "scripting",
+      "contextMenus"
+    ],
+    "icons": {
+      "16": "/assets/icon_16.png",
+      "32": "/assets/icon_32.png",
+      "48": "/assets/icon_48.png",
+      "64": "/assets/icon_64.png",
+      "128": "/assets/icon_128.png"
+    },
+    "action": {
+      "default_icon": {
+        "16": "/assets/icon_16_grey.png",
+        "32": "/assets/icon_32_grey.png",
+        "48": "/assets/icon_48_grey.png",
+        "64": "/assets/icon_64_grey.png",
+        "128": "/assets/icon_128_grey.png"
+      }
+    }
+  }
+}
